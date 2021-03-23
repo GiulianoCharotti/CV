@@ -1,0 +1,152 @@
+@keyframes anima2 {
+  100% {
+    opacity: 1;
+  }
+}
+/*Section*/
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #d9ed92;
+  min-height: 100vh;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+}
+
+/*End of Section*/
+.presentation {
+  background-image: url(../images/stock1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.presentation .background {
+  background-color: rgba(1, 32, 13, 0.336);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.presentation .background:hover {
+  background-color: rgba(2, 48, 19, 0);
+}
+.presentation .textWrapper {
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fcb3e1b4;
+  opacity: 0;
+  animation: anima2 0.5s ease-out forwards;
+  max-width: 1200px;
+}
+.presentation .textWrapper h1, .presentation .textWrapper h2 {
+  opacity: 0;
+  margin: 0;
+}
+.presentation .textWrapper h1 {
+  text-transform: uppercase;
+  font-size: calc(1.525rem + 3.3vw);
+  animation: anima2 0.75s ease-out 1s forwards;
+}
+@media (min-width: 1200px) {
+  .presentation .textWrapper h1 {
+    font-size: 4rem;
+  }
+}
+.presentation .textWrapper h2 {
+  text-transform: uppercase;
+  font-size: calc(1.325rem + 0.9vw);
+  margin-top: 30px;
+  line-height: 40px;
+  animation: anima2 0.75s ease-out 2s forwards;
+}
+@media (min-width: 1200px) {
+  .presentation .textWrapper h2 {
+    font-size: 2rem;
+  }
+}
+
+.aboutMe .textWrapper h2 {
+  text-transform: uppercase;
+  font-size: calc(1.475rem + 2.7vw);
+}
+@media (min-width: 1200px) {
+  .aboutMe .textWrapper h2 {
+    font-size: 3.5rem;
+  }
+}
+.aboutMe .textWrapper p {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .aboutMe .textWrapper p {
+    font-size: 1.5rem;
+  }
+}
+
+/*end scroll*/
+.education .textWrapper h2 {
+  text-transform: uppercase;
+  font-size: calc(1.425rem + 2.1vw);
+}
+@media (min-width: 1200px) {
+  .education .textWrapper h2 {
+    font-size: 3rem;
+  }
+}
+.education .textWrapper h3 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .education .textWrapper h3 {
+    font-size: 2rem;
+  }
+}
+.education .textWrapper p {
+  font-size: 1rem;
+}
+
+.menu {
+  background-color: rgba(24, 255, 113, 0.205);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.01px;
+  z-index: 1;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 780;
+}
+
+#footer {
+  background-color: #d9ed92;
+}
+
+main {
+  display: inline-block;
+}
+
+.email {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-top: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

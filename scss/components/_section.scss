@@ -1,0 +1,17 @@
+/*Section*/
+section{
+    @include flex(center,center,wrap);
+    background-color: $bgColorP;
+    min-height: $height;
+    letter-spacing: $letterSpacing;
+    //color: $colorP;
+    text-align: $alignT;
+    font-family: $font-family;
+    padding: 10px;
+}
+
+/*End of Section*/
+// .project-container{
+//     flex-direction: column;
+
+// }

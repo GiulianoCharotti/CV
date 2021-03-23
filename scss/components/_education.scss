@@ -1,0 +1,15 @@
+.education{
+    .textWrapper{
+        h2{
+            text-transform: $uppercase;
+            @include rfs(3rem);
+        }
+        h3{
+            @include rfs(2rem);
+        }
+        p{
+            @include rfs(1rem);
+        }
+
+    }
+}

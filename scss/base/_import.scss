@@ -1,0 +1,20 @@
+
+//other
+@import '../../node_modules/rfs/scss.scss';
+//Base
+@import 'variables.scss';
+@import 'extends.scss';
+@import 'mixins.scss';
+@import 'mediaQuery';
+@import 'animations';
+
+//Components
+@import '../components/section';
+@import '../components/presentation';
+@import '../components/about';
+@import '../components/education';
+@import '../components/projects';
+@import '../components/menu';
+@import '../components/footer';
+@import '../components/contact';
+

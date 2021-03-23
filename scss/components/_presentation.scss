@@ -1,0 +1,50 @@
+
+.presentation{
+    background-image: url(../../images/stock1.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    .background{
+        background-color: rgba(1, 32, 13, 0.336);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .background:hover{
+        background-color: rgba(2, 48, 19, 0);
+    }
+    .textWrapper {
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+        background-color: #fcb3e1b4;
+        
+        //animation
+        opacity: 0;
+        animation: anima2 0.5s ease-out forwards;
+        max-width: $maxWidth;
+        h1,h2{
+            opacity: 0;
+            margin:0;
+        }
+        h1{
+            text-transform: $uppercase;
+            @include rfs(4rem);
+            animation: anima2 0.75s ease-out 1s forwards;
+        }
+        h2{
+            text-transform: $uppercase;
+            @include rfs(2rem);
+            margin-top: 30px;
+            line-height: 40px;
+            animation: anima2 0.75s ease-out 2s forwards;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.aboutMe{
+    .textWrapper{
+        // max-width: $maxWidth;
+        h2{
+            text-transform: $uppercase;
+            @include rfs(3.5rem);
+        }
+        p{
+            @include rfs(1.5rem);
+        }
+    }
+}
+/*end scroll*/
+
+// max-width, margin
