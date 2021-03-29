@@ -1,11 +1,54 @@
 .menu {
-        background-color: rgba(24, 255, 113, 0.205);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0.01px;
+        background-color: #a0c4ff95;
         z-index: 1;
 }
 .nav-link{
     color: black;
     font-weight: 780;
 }
+
+
+/*Botones arriba y abajo*/
+/*Boton arriba*/
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 2;
+    padding: 21px;
+    background-color: rgb(255, 102, 0);
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: ripple-1 3s ease-in-out;
+}
+
+.cd-top {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(../../images/Arrow_top.png) no-repeat center 50%;
+}
+/*Fin del Boton arriba*/
+
+/*Boton abajo*/
+#toBottomBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 50%;
+    background-color: rgb(255, 102, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cd-bottom {
+    display: inline-block;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(../../images/Arrow_bottom.png) no-repeat center 50% ;
+    animation: ripple-1 3s ease-in-out;
+    animation: ripple-2 1.5s infinite ease-in-out;
+
+}
+/*Fin boton abajo*/
+/*Fin Botones arriba y abajo*/

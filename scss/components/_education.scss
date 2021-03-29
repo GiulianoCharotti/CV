@@ -1,5 +1,7 @@
 .education{
+    align-content:flex-start;
     .textWrapper{
+        text-align: start;
         h2{
             text-transform: $uppercase;
             @include rfs(3rem);

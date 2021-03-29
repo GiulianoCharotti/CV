@@ -1,39 +1,88 @@
+@media only screen and (max-width: 1440px) {
+  section .textWrapper {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section .textWrapper {
+    max-width: 844px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .textWrapper {
+    max-width: 588px;
+  }
+}
+@media screen and (max-width: 650px) {
+  section .textWrapper {
+    max-width: 470px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .textWrapper {
+    max-width: 300px;
+  }
+}
 @keyframes anima2 {
   100% {
     opacity: 1;
   }
 }
+/*Animacion boton*/
+@keyframes ripple-1 {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes ripple-2 {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+/*Fin Animacion boton*/
 /*Section*/
 section {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background-color: #d9ed92;
+  background-color: #a0c4ff40;
   min-height: 100vh;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-align: center;
   font-family: "Playfair Display", serif;
   padding: 10px;
+  min-width: 100vw;
 }
 
-/*End of Section*/
+.textWrapper {
+  max-width: 1366px;
+}
+
 .presentation {
-  background-image: url(../../images/stock1.jpg);
+  background-image: url(../../images/background/motherboard.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
 }
 .presentation .background {
-  background-color: rgba(1, 32, 13, 0.336);
+  background-color: rgba(0, 0, 0, 0.692);
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
-}
-.presentation .background:hover {
-  background-color: rgba(2, 48, 19, 0);
 }
 .presentation .textWrapper {
   font-weight: 900;
@@ -44,10 +93,10 @@ section {
   width: 80%;
   padding: 20px;
   text-align: center;
-  background-color: #fcb3e1b4;
   opacity: 0;
   animation: anima2 0.5s ease-out forwards;
   max-width: 1200px;
+  color: white;
 }
 .presentation .textWrapper h1, .presentation .textWrapper h2 {
   opacity: 0;
@@ -78,23 +127,34 @@ section {
 
 .aboutMe .textWrapper h2 {
   text-transform: uppercase;
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   .aboutMe .textWrapper h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 .aboutMe .textWrapper p {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: 1rem;
+}
+.aboutMe .textWrapper .title {
+  margin-bottom: calc(1.825rem + 6.9vw);
 }
 @media (min-width: 1200px) {
-  .aboutMe .textWrapper p {
-    font-size: 1.5rem;
+  .aboutMe .textWrapper .title {
+    margin-bottom: 7rem;
   }
 }
+.aboutMe .textWrapper .sub-title-a, .aboutMe .textWrapper .sub-title-d, .aboutMe .textWrapper .about-text, .aboutMe .textWrapper .details-text {
+  text-align: start;
+}
 
-/*end scroll*/
+.education {
+  align-content: flex-start;
+}
+.education .textWrapper {
+  text-align: start;
+}
 .education .textWrapper h2 {
   text-transform: uppercase;
   font-size: calc(1.425rem + 2.1vw);
@@ -118,14 +178,19 @@ section {
 
 /*Projects - Carousel*/
 .carousel-caption h5, .carousel-caption p {
-  color: black;
+  color: white;
+}
+
+.carousel-inner {
+  max-width: 1366px !important;
+}
+
+.project {
+  padding: 0 40px 0 30px;
 }
 
 .menu {
-  background-color: rgba(24, 255, 113, 0.205);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0.01px;
+  background-color: #a0c4ff95;
   z-index: 1;
 }
 
@@ -134,8 +199,52 @@ section {
   font-weight: 780;
 }
 
+/*Botones arriba y abajo*/
+/*Boton arriba*/
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 2;
+  padding: 21px;
+  background-color: #ff6600;
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: ripple-1 3s ease-in-out;
+}
+
+.cd-top {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
+  background: url(../../images/Arrow_top.png) no-repeat center 50%;
+}
+
+/*Fin del Boton arriba*/
+/*Boton abajo*/
+#toBottomBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 50%;
+  background-color: #ff6600;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cd-bottom {
+  display: inline-block;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
+  background: url(../../images/Arrow_bottom.png) no-repeat center 50%;
+  animation: ripple-1 3s ease-in-out;
+  animation: ripple-2 1.5s infinite ease-in-out;
+}
+
+/*Fin boton abajo*/
+/*Fin Botones arriba y abajo*/
 #footer {
-  background-color: #d9ed92;
+  background-color: #a0c4ff40;
 }
 
 main {
@@ -152,6 +261,10 @@ main {
 
 .form-group {
   margin-top: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

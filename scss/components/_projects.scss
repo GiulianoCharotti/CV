@@ -1,6 +1,12 @@
 /*Projects - Carousel*/
 .carousel-caption{
     h5,p{
-        color: black;
+        color: white;
     }
+}
+.carousel-inner{
+    max-width:1366px !important;
+}
+.project{
+    padding: 0 40px 0 30px;
 }

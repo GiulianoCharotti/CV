@@ -1,19 +1,19 @@
 
 .presentation{
-    background-image: url(../../images/stock1.jpg);
+    background-image: url(../../images/background/motherboard.jpg);
     background-repeat:no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     .background{
-        background-color: rgba(1, 32, 13, 0.336);
+        background-color: rgba(0, 0, 0, 0.692);
         position: absolute;
         left: 0;
         width: 100%;
         height: 100%;
     }
     .background:hover{
-        background-color: rgba(2, 48, 19, 0);
+        // background-color: rgba(2, 48, 19, 0);
     }
     .textWrapper {
         font-weight: 900;
@@ -24,12 +24,12 @@
         width: 80%;
         padding: 20px;
         text-align: center;
-        background-color: #fcb3e1b4;
         
         //animation
         opacity: 0;
         animation: anima2 0.5s ease-out forwards;
         max-width: $maxWidth;
+        color: white;
         h1,h2{
             opacity: 0;
             margin:0;
