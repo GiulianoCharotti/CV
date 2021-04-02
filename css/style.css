@@ -50,6 +50,20 @@
     transform: translateY(-15px);
   }
 }
+@keyframes ripple-3 {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 /*Fin Animacion boton*/
 /*Section*/
 section {
@@ -57,45 +71,71 @@ section {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background-color: #a0c4ff40;
+  background-color: #48cae438;
   min-height: 100vh;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Arvo", serif;
   padding: 10px;
   min-width: 100vw;
 }
-
-.textWrapper {
+section .textWrapper {
   max-width: 1366px;
+}
+section h2 {
+  color: #ff8400;
+  font-size: calc(1.425rem + 2.1vw);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  section h2 {
+    font-size: 3rem;
+  }
+}
+section h3 {
+  color: #ff8400;
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  section h3 {
+    font-size: 2rem;
+  }
+}
+section p {
+  font-size: 1rem;
 }
 
 .presentation {
+  /*Background presentation*/
   background-image: url(../../images/background/motherboard.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  /*End bacground presentation*/
+  /*Background of the image*/
+  /*End Background of the image*/
+  /*Text presentation*/
+  /*End Text presentation*/
 }
 .presentation .background {
   background-color: rgba(0, 0, 0, 0.692);
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 }
 .presentation .textWrapper {
-  font-weight: 900;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   padding: 20px;
-  text-align: center;
-  opacity: 0;
-  animation: anima2 0.5s ease-out forwards;
-  max-width: 1200px;
+}
+.presentation .textWrapper .title {
   color: white;
 }
 .presentation .textWrapper h1, .presentation .textWrapper h2 {
@@ -115,8 +155,7 @@ section {
 .presentation .textWrapper h2 {
   text-transform: uppercase;
   font-size: calc(1.325rem + 0.9vw);
-  margin-top: 30px;
-  line-height: 40px;
+  line-height: 120px;
   animation: anima2 0.75s ease-out 2s forwards;
 }
 @media (min-width: 1200px) {
@@ -125,15 +164,6 @@ section {
   }
 }
 
-.aboutMe .textWrapper h2 {
-  text-transform: uppercase;
-  font-size: calc(1.425rem + 2.1vw);
-}
-@media (min-width: 1200px) {
-  .aboutMe .textWrapper h2 {
-    font-size: 3rem;
-  }
-}
 .aboutMe .textWrapper p {
   font-size: 1rem;
 }
@@ -155,52 +185,62 @@ section {
 .education .textWrapper {
   text-align: start;
 }
-.education .textWrapper h2 {
-  text-transform: uppercase;
-  font-size: calc(1.425rem + 2.1vw);
+.education a, .education h3 {
+  color: black;
 }
-@media (min-width: 1200px) {
-  .education .textWrapper h2 {
-    font-size: 3rem;
-  }
+.education #arrow-left {
+  display: inline;
+  background: url(../images/left-arrow.svg) no-repeat left;
+  padding-left: 30px;
+  font-size: 18px;
+  animation: ripple-3 3s infinite;
 }
-.education .textWrapper h3 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  .education .textWrapper h3 {
-    font-size: 2rem;
-  }
-}
-.education .textWrapper p {
-  font-size: 1rem;
+.education #arrow-left p {
+  display: inline;
 }
 
 /*Projects - Carousel*/
-.carousel-caption h5, .carousel-caption p {
-  color: white;
+.project .background {
+  background-color: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.project .background:hover {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+.project div h5 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .project div h5 {
+    font-size: 2rem;
+  }
+}
+.project div p {
+  font-size: 1.2rem;
 }
 
-.carousel-inner {
-  max-width: 1366px !important;
-}
-
-.project {
-  padding: 0 40px 0 30px;
-}
-
+/*Menu*/
 .menu {
-  background-color: #a0c4ff95;
-  z-index: 1;
+  background-color: #48cae438;
+  font-weight: 700;
+  font-size: calc(1.255rem + 0.06vw);
+}
+@media (min-width: 1200px) {
+  .menu {
+    font-size: 1.3rem;
+  }
+}
+.menu .nav-item:hover {
+  background-color: #f77f00;
 }
 
-.nav-link {
-  color: black;
-  font-weight: 780;
-}
-
+/*End menu*/
 /*Botones arriba y abajo*/
-/*Boton arriba*/
+/*Boton ir arriba*/
 #toTopBtn {
   position: fixed;
   bottom: 26px;
@@ -221,7 +261,7 @@ section {
 }
 
 /*Fin del Boton arriba*/
-/*Boton abajo*/
+/*Boton ir abajo*/
 #toBottomBtn {
   position: fixed;
   bottom: 26px;
@@ -244,7 +284,7 @@ section {
 /*Fin boton abajo*/
 /*Fin Botones arriba y abajo*/
 #footer {
-  background-color: #a0c4ff40;
+  background-color: #48cae438;
 }
 
 main {

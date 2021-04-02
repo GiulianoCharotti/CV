@@ -1,15 +1,17 @@
-.menu {
-        background-color: #a0c4ff95;
-        z-index: 1;
+/*Menu*/
+.menu{
+    background-color: $bgColorP;
+    font-weight: 700;
+    @include rfs(1.3rem);
+    .nav-item:hover{
+        background-color: #f77f00;
+    }
 }
-.nav-link{
-    color: black;
-    font-weight: 780;
-}
+/*End menu*/
 
 
 /*Botones arriba y abajo*/
-/*Boton arriba*/
+/*Boton ir arriba*/
 #toTopBtn {
     position: fixed;
     bottom: 26px;
@@ -30,7 +32,7 @@
 }
 /*Fin del Boton arriba*/
 
-/*Boton abajo*/
+/*Boton ir abajo*/
 #toBottomBtn {
     position: fixed;
     bottom: 26px;

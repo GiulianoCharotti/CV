@@ -4,12 +4,25 @@ section{
     background-color: $bgColorP;
     min-height: $height;
     letter-spacing: $letterSpacing;
-    //color: $colorP;
     text-align: $alignT;
-    font-family: $font-family;
+    font-family: 'Arvo', serif;
     padding: 10px;
     min-width: 100vw;
-}
-.textWrapper{
+    .textWrapper{
     max-width: 1366px;
 }
+    h2{
+        color: #ff8400;
+        @include rfs(3rem);
+        text-transform: $uppercase;
+        font-weight: 400;
+    }
+    h3{
+        color: #ff8400;
+        @include rfs(2rem);
+    }
+    p{
+        @include rfs(1rem);
+    }
+}
+

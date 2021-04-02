@@ -1,13 +1,13 @@
 .aboutMe{
     // align-content:flex-start;
+    
     .textWrapper{
         // padding-top: 8%;
         // @include padding-left(4rem);
         // @include padding-right(4rem);
 
         h2{
-            text-transform: $uppercase;
-            @include rfs(3rem);
+
         }
         p{
             @include rfs(1rem);

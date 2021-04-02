@@ -1,17 +1,19 @@
 .education{
     align-content:flex-start;
-    .textWrapper{
-        text-align: start;
-        h2{
-            text-transform: $uppercase;
-            @include rfs(3rem);
+        .textWrapper{
+            text-align: start;
         }
-        h3{
-            @include rfs(2rem);
-        }
+    a,h3{
+        color: black;
+    }
+    #arrow-left{
+        display: inline;
+        background: url(../images/left-arrow.svg) no-repeat left;
+        padding-left: 30px;
+        font-size: 18px;
+        animation: ripple-3 3s infinite;
         p{
-            @include rfs(1rem);
+            display: inline;
         }
-
     }
 }
