@@ -1,34 +1,27 @@
-/*Projects - Carousel*/
-// .carousel-caption{
-//     h5,p{
-//         color: white;
-//     }
-// }
-// .carousel-inner{
-//     max-width:1366px !important;
-// }
-// .project{
-//     padding: 0 40px 0 30px;
-// }
-
 .project{
-    .background{
-        background-color: rgba(0, 0, 0, 0.726);
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .background:hover{
-        background-color: rgba(0, 0, 0, 0.425);
-    }
-    div{
-        h5{
-            @include rfs(2rem);
+    .carousel-item{
+        .background{
+            background-color: rgba(0, 0, 0, 0.726);
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            div{
+                h5{
+                    @include rfs(2rem);
+                }
+                p{
+                    @include rfs(1.2rem);
+                }
+            }
         }
-        p{
-            @include rfs(1.2rem);
+        .background:hover{
+            background-color: rgba(0, 0, 0, 0.425);
         }
+
     }
+
+
+
 }

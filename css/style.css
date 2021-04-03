@@ -1,28 +1,3 @@
-@media only screen and (max-width: 1440px) {
-  section .textWrapper {
-    max-width: 900px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  section .textWrapper {
-    max-width: 844px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section .textWrapper {
-    max-width: 588px;
-  }
-}
-@media screen and (max-width: 650px) {
-  section .textWrapper {
-    max-width: 470px;
-  }
-}
-@media screen and (max-width: 480px) {
-  section .textWrapper {
-    max-width: 300px;
-  }
-}
 @keyframes anima2 {
   100% {
     opacity: 1;
@@ -79,9 +54,6 @@ section {
   padding: 10px;
   min-width: 100vw;
 }
-section .textWrapper {
-  max-width: 1366px;
-}
 section h2 {
   color: #ff8400;
   font-size: calc(1.425rem + 2.1vw);
@@ -108,7 +80,7 @@ section p {
 
 .presentation {
   /*Background presentation*/
-  background-image: url(../../images/background/motherboard.jpg);
+  background-image: url(../images/background/motherboard.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -199,8 +171,7 @@ section p {
   display: inline;
 }
 
-/*Projects - Carousel*/
-.project .background {
+.project .carousel-item .background {
   background-color: rgba(0, 0, 0, 0.726);
   position: absolute;
   right: 0;
@@ -208,19 +179,19 @@ section p {
   width: 100%;
   height: 100%;
 }
-.project .background:hover {
-  background-color: rgba(0, 0, 0, 0.425);
-}
-.project div h5 {
+.project .carousel-item .background div h5 {
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
-  .project div h5 {
+  .project .carousel-item .background div h5 {
     font-size: 2rem;
   }
 }
-.project div p {
+.project .carousel-item .background div p {
   font-size: 1.2rem;
+}
+.project .carousel-item .background:hover {
+  background-color: rgba(0, 0, 0, 0.425);
 }
 
 /*Menu*/
@@ -257,7 +228,7 @@ section p {
 
 .cd-top {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
-  background: url(../../images/Arrow_top.png) no-repeat center 50%;
+  background: url(../images/Arrow_top.png) no-repeat center 50%;
 }
 
 /*Fin del Boton arriba*/
@@ -276,7 +247,7 @@ section p {
   display: inline-block;
   z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
-  background: url(../../images/Arrow_bottom.png) no-repeat center 50%;
+  background: url(../images/Arrow_bottom.png) no-repeat center 50%;
   animation: ripple-1 3s ease-in-out;
   animation: ripple-2 1.5s infinite ease-in-out;
 }
@@ -285,10 +256,6 @@ section p {
 /*Fin Botones arriba y abajo*/
 #footer {
   background-color: #48cae438;
-}
-
-main {
-  display: inline-block;
 }
 
 .email {
@@ -303,8 +270,85 @@ main {
   margin-top: 2px;
 }
 
+@media only screen and (min-width: 1400px) {
+  section .textWrapper {
+    max-width: 1280px;
+  }
+
+  .carousel-item img {
+    max-width: 1280px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  section .textWrapper {
+    max-width: 1100px;
+  }
+
+  .carousel-item img {
+    max-width: 1100px;
+  }
+
+  #profilePic {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section .textWrapper {
+    max-width: 924px;
+  }
+
+  .carousel-item img {
+    max-width: 924px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section .textWrapper {
+    max-width: 714px;
+  }
+
+  .carousel-item img {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .textWrapper {
+    max-width: 588px;
+  }
+
+  .carousel-item img {
+    max-width: 568px;
+  }
+}
+@media screen and (max-width: 650px) {
+  section .textWrapper {
+    max-width: 470px;
+  }
+
+  .carousel-item img {
+    max-width: 500px;
+  }
+
+  #profilePic {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .textWrapper {
+    max-width: 300px;
+  }
+
+  .carousel-item img {
+    max-width: 400px;
+  }
+}
 html {
   scroll-behavior: smooth;
+}
+
+main {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

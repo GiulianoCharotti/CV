@@ -4,7 +4,6 @@
 //Base
 @import 'variables.scss';
 @import 'mixins.scss';
-@import 'mediaQuery';
 @import 'animations';
 
 //Components
@@ -16,4 +15,6 @@
 @import '../components/menu';
 @import '../components/footer';
 @import '../components/contact';
+@import '../components/mediaQuery';
+
 

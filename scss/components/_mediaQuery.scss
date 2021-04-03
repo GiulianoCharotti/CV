@@ -1,0 +1,99 @@
+@media only screen and (min-width: 1400px) {
+    section{
+        .textWrapper{
+            max-width:1280px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 1280px;
+        }
+    }
+  }
+@media only screen and (max-width: 1440px) {
+    section{
+        .textWrapper{
+            max-width:1100px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 1100px;
+        }
+    }
+    #profilePic{
+        max-width: 300px;
+        max-height: 300px;
+    }
+  }
+
+  
+@media screen and (max-width: 1280px) {
+    section{
+        .textWrapper{
+            max-width:924px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 924px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section{
+        .textWrapper{
+            max-width:714px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        .textWrapper{
+            max-width:588px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 568px;
+        }
+    }
+}
+    
+@media screen and (max-width: 650px) {
+    section{
+        .textWrapper{
+            max-width:470px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 500px;
+        }
+    }
+    #profilePic{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+    
+@media screen and (max-width: 480px) {
+    section{
+        .textWrapper{
+            max-width:300px;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width:400px;
+        }
+    }
+}
+

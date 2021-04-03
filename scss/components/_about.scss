@@ -1,14 +1,5 @@
 .aboutMe{
-    // align-content:flex-start;
-    
     .textWrapper{
-        // padding-top: 8%;
-        // @include padding-left(4rem);
-        // @include padding-right(4rem);
-
-        h2{
-
-        }
         p{
             @include rfs(1rem);
         }
@@ -19,6 +10,4 @@
             text-align: start;
         }
     }
-
-
 }

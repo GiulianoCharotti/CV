@@ -18,17 +18,3 @@ $(document).ready(function () {
     });
 });
 
-
-const bgImageArray = ["1_ozdgvm.jpg", "2_vjtjfy.jpg", "3_oxpdx2.jpg"],
-  base = "https://res.cloudinary.com/iolamide/image/upload/v1604569872/home_banner_";
-  
-bgImageArray.forEach(function(img) {
-  new Image().src = base + img;
-  // caches images, avoiding white flash between background replacements
-});
-  
-$('.carousel'). on('slide.bs.carousel', function(e) {
-  $('.animated-bg').css({
-    backgroundImage: `url(${base}${bgImageArray[e.to]})`
-  });
-});

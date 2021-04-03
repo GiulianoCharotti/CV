@@ -28,7 +28,7 @@
 
 .cd-top {
     box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
-    background: url(../../images/Arrow_top.png) no-repeat center 50%;
+    background: url(../images/Arrow_top.png) no-repeat center 50%;
 }
 /*Fin del Boton arriba*/
 
@@ -47,7 +47,7 @@
     display: inline-block;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
-    background: url(../../images/Arrow_bottom.png) no-repeat center 50% ;
+    background: url(../images/Arrow_bottom.png) no-repeat center 50% ;
     animation: ripple-1 3s ease-in-out;
     animation: ripple-2 1.5s infinite ease-in-out;
 

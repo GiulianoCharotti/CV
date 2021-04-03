@@ -8,9 +8,6 @@ section{
     font-family: 'Arvo', serif;
     padding: 10px;
     min-width: 100vw;
-    .textWrapper{
-    max-width: 1366px;
-}
     h2{
         color: #ff8400;
         @include rfs(3rem);
